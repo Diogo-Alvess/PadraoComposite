@@ -35,5 +35,14 @@ class LojaTest {
         );
     }
 
-
+    @Test
+    void deveRetornarExcecaoCatalogoNaoDefinido() {
+        try {
+            Loja loja = new Loja();
+            loja.exibirCatalogo();
+            fail();
+        } catch (NullPointerException e) {
+            assertEquals("Loja sem catálogo definido", e.getMessage());
+        }
+    }
 }
