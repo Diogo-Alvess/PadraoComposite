@@ -35,6 +35,7 @@ class LojaTest {
         );
     }
 
+
     @Test
     void deveRetornarExcecaoCatalogoNaoDefinido() {
         try {
